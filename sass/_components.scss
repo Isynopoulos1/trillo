@@ -2,14 +2,45 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 ////SEARCH BOX////
 .search {
+  background-color: orangered;
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__input {
+    font-size: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.5rem;
   }
 
+  &:focus {
+    outline: none;
+    width: 100%;
+    background-color: var(--color-grey-light-3);
+  }
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
@@ -22,6 +53,7 @@
 
 .user-nav {
   &__icon-box {
+    background-color: palegoldenrod;
   }
 
   &__icon {
