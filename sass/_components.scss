@@ -185,15 +185,21 @@
 }
 
 ////HOTEL OVERVIEW////
+
 .overview {
+  display: flex;
   &__heading {
   }
 
-  &__star {
+  &__stars {
+    flex: 1;
   }
 
   &__icon-star,
   &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
   }
 
   &__rating {
